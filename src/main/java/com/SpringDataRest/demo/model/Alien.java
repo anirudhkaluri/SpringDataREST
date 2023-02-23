@@ -1,6 +1,13 @@
 package com.SpringDataRest.demo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
+@Entity
 public class Alien {
+	@Id
+	@GeneratedValue
 	private int aid;
 	private String name;
 	private String tech;
